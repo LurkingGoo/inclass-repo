@@ -6,10 +6,10 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
   if (name && email && message) {
     document.getElementById('form-response').textContent =
-      `Thank you, ${name}! We'll get back to you soon.`;
+      `Thanks, ${name}! We'll contact you shortly.`;
     this.reset();
   } else {
     document.getElementById('form-response').textContent =
-      'Please fill in all fields before submitting.';
+      'Please fill out all fields.';
   }
 });

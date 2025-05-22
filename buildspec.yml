@@ -1,14 +1,18 @@
 version: 0.2
+
 phases:
-install:
-runtime-versions:
-nodejs: latest
-commands:
-# If needed, you can add commands for dependency installation
-build:
-commands:
-- echo "Build completed on `date`"
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies (none needed for static HTML/CSS/JS)..."
+  build:
+    commands:
+      - echo "Building static website..."
+      - mkdir -p dist
+      - cp -r * dist
 artifacts:
-files:
-- '**/*'
-base-directory: .
+  files:
+    - '**/*'
+  base-directory: dist
+  discard-paths: no

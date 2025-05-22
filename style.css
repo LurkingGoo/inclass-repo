@@ -1,36 +1,39 @@
-/* Reset & Fonts */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f8f8f8;
+  background-color: #fff8f0;
+  color: #3e2a19;
 }
 
 a {
   text-decoration: none;
-  color: #a52a2a;
+  color: #8b0000;
 }
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 1.5rem 0;
 }
 
 /* Header */
 header {
-  background-color: #fff;
-  padding: 2rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fff0e5;
   text-align: center;
+  padding: 2rem 0;
+  border-bottom: 5px solid #8b0000;
+}
+
+header .logo {
+  height: 80px;
+  margin-bottom: 1rem;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2.5rem;
-  color: #6b3e26;
+  color: #8b0000;
 }
 
 header nav {
@@ -38,27 +41,32 @@ header nav {
 }
 
 header nav a {
-  margin: 0 1rem;
+  margin: 0 1.2rem;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Sections */
 .section {
   padding: 3rem 0;
-  background-color: #fff;
 }
 
 .section.dark {
-  background-color: #f1e9e3;
+  background-color: #fae0d6;
 }
 
 h2 {
   text-align: center;
   font-size: 2rem;
+  color: #6e260e;
   margin-bottom: 1.5rem;
 }
 
-/* Grid Products */
+p {
+  font-size: 1.1rem;
+}
+
+/* Product Grid */
 .grid {
   display: flex;
   justify-content: center;
@@ -68,26 +76,34 @@ h2 {
 
 .card {
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
+  border: 2px solid #ddbba0;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 260px;
   text-align: center;
-  width: 250px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .price {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
-  color: #6b3e26;
+  color: #8b0000;
 }
 
-/* Contact Form */
+/* Contact */
 form {
   display: flex;
   flex-direction: column;
@@ -105,21 +121,21 @@ input, textarea {
 
 button {
   padding: 0.8rem;
-  background-color: #a52a2a;
+  background-color: #8b0000;
   color: white;
-  border: none;
   font-size: 1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #912222;
+  background-color: #5e0000;
 }
 
 /* Footer */
 footer {
-  background: #333;
+  background: #3e2a19;
   color: white;
   text-align: center;
   padding: 1rem 0;
