@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Rayzin, Lucas, and Zachary</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ya Kun Kopi by RLZ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <h1 class="logo">Team RLZ</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Ya Kun Kopi</h1>
+      <p>Crafted with tradition. Brewed by Rayzin, Lucas, and Zachary.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>We are Team Rayzin, Lucas, and Zachary</h2>
-            <p>Building sleek solutions with powerful technologies.</p>
-            <a href="https://www.sgcodecampus.com/" target="_blank"><button >Learn More</button></a>
-        </div>
-    </section>
-
+  <main>
     <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>We’re a team of passionate developers inspired by innovation and design. We craft user-first applications with precision and polish.</p>
+      <div class="container">
+        <h2>Our Story</h2>
+        <p>Inspired by the rich heritage of Singaporean kopi, Ya Kun Kopi blends tradition with quality. We're passionate about delivering the bold, sweet, and nostalgic flavors you love — one cup at a time.</p>
+      </div>
     </section>
 
-    <section id="team" class="section">
-        <h2>Meet the Team</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <h3>Rayzin</h3>
-                <p>Frontend Engineer & UI Specialist</p>
-            </div>
-            <div class="team-member">
-                <h3>Lucas</h3>
-                <p>Backend Engineer & Cloud Architect</p>
-            </div>
-            <div class="team-member">
-                <h3>Zachary</h3>
-                <p>DevOps & Automation Expert</p>
-            </div>
+    <section id="products" class="section dark">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Kopi-O</h3>
+            <p>Bold black coffee with sugar. No milk. Intense flavor.</p>
+            <span class="price">$2.00</span>
+          </div>
+          <div class="card">
+            <h3>Kopi-C</h3>
+            <p>Coffee with evaporated milk and sugar. Silky smooth.</p>
+            <span class="price">$2.50</span>
+          </div>
+          <div class="card">
+            <h3>Kopi Siew Dai</h3>
+            <p>Less sugar, more coffee. A balanced, healthier brew.</p>
+            <span class="price">$2.50</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
+      <div class="container">
         <h2>Contact Us</h2>
-        <p>Email us at <a href="mailto:team@rayzinlucaszachary.dev">team@rayzinlucaszachary.dev</a></p>
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="form-response"></p>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Team Rayzin, Lucas, and Zachary. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ya Kun Kopi by Rayzin, Lucas, and Zachary. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
